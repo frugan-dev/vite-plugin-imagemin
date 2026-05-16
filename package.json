@@ -6,6 +6,10 @@
     "node": ">=18.0.0"
   },
   "type": "module",
+  "main": "./packages/core/dist/index.js",
+  "module": "./packages/core/dist/index.js",
+  "types": "./packages/core/dist/index.d.ts",
+  "exports": "./packages/core/dist/index.js",
   "homepage": "https://github.com/vheemstra/vite-plugin-imagemin#readme",
   "keywords": [
     "vite",
