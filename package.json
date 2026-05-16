@@ -54,7 +54,8 @@
     "preversion": "run-s lint build test && git add .",
     "version": "cross-var npm version --no-git-tag-version $npm_package_version --workspace=packages/core && git add .",
     "_version_new_": "expose-env npm version --no-git-tag-version %npm_package_version% --workspace=packages/core && git add .",
-    "postversion": "git push --follow-tags"
+    "postversion": "git push --follow-tags",
+    "prepare": "npm run build --workspace=packages/core"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^8.35.1",
